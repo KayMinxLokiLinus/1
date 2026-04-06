@@ -5,7 +5,8 @@ A[Intern / Trainee] --> B[EV Technician]
 B --> C[Mid-level EV Engineer]
 C --> D[Senior EV Engineer]
 
-C --> E[Charging Station Technician วิศวกรทดสอบระบบ EV]
+C --> E[Charging Station Technician 
+วิศวกรทดสอบระบบ EV]
 
 C --> F[EV Testing Engineer]
 
