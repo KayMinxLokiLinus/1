@@ -1,2 +1,1 @@
-[
-](https://kayminxlokilinus.github.io/1/)
+https://kayminxlokilinus.github.io/1/
