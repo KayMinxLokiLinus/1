@@ -5,32 +5,25 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-900 text-white font-sans">
+<body class="bg-gray-900 text-white">
 
 <div class="max-w-2xl mx-auto mt-10 p-6">
   <h1 class="text-3xl font-bold mb-6 text-center">⚡ EV Career Roadmap</h1>
 
   <div class="space-y-4">
 
-    <div class="bg-gray-800 p-4 rounded-xl shadow">
+    <div class="bg-gray-800 p-4 rounded-xl">
       <button onclick="toggle('a')" class="w-full text-left font-semibold">
         🔧 EV Technician
       </button>
-      <div id="a" class="hidden mt-2 text-gray-300">
-        - ซ่อมรถ EV<br>
-        - ตรวจแบตเตอรี่<br>
-        - ใช้เครื่องมือวัด
-      </div>
-    </div>
 
-    <div class="bg-gray-800 p-4 rounded-xl shadow">
-      <button onclick="toggle('b')" class="w-full text-left font-semibold">
-        ⚙️ EV Engineer
-      </button>
-      <div id="b" class="hidden mt-2 text-gray-300">
-        - ออกแบบระบบไฟฟ้า<br>
-        - วิเคราะห์ BMS<br>
-        - เขียนโปรแกรมควบคุม
+      <div id="a"
+        class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out text-gray-300">
+        <p class="mt-2">
+          - ซ่อมรถ EV <br>
+          - ตรวจแบตเตอรี่ <br>
+          - ใช้เครื่องมือวัด
+        </p>
       </div>
     </div>
 
@@ -40,7 +33,14 @@
 <script>
 function toggle(id) {
   const el = document.getElementById(id);
-  el.classList.toggle("hidden");
+
+  if (el.classList.contains("max-h-0")) {
+    el.classList.remove("max-h-0");
+    el.classList.add("max-h-40");
+  } else {
+    el.classList.remove("max-h-40");
+    el.classList.add("max-h-0");
+  }
 }
 </script>
 
