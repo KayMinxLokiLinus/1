@@ -7,6 +7,7 @@ C --> D[Senior EV Engineer]
 
 C --> E[Charging Station Technician]
 C --> F[EV Testing Engineer]
+วิศวกรทดสอบระบบ EV
 
 D --> G[EV System Specialist]
 G --> H[Embedded / Control Engineer]
