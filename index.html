@@ -2,36 +2,47 @@
 <html>
 <head>
   <title>EV Roadmap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
 
-<h1>EV Career Roadmap ⚡</h1>
+<body class="bg-gray-900 text-white font-sans">
 
-<button onclick="toggle()">EV Technician</button>
+<div class="max-w-2xl mx-auto mt-10 p-6">
+  <h1 class="text-3xl font-bold mb-6 text-center">⚡ EV Career Roadmap</h1>
 
-<div id="content" style="display:none;">
-  <p>ซ่อมรถ EV, ใช้เครื่องมือวัด, ตรวจแบตเตอรี่</p>
+  <div class="space-y-4">
+
+    <div class="bg-gray-800 p-4 rounded-xl shadow">
+      <button onclick="toggle('a')" class="w-full text-left font-semibold">
+        🔧 EV Technician
+      </button>
+      <div id="a" class="hidden mt-2 text-gray-300">
+        - ซ่อมรถ EV<br>
+        - ตรวจแบตเตอรี่<br>
+        - ใช้เครื่องมือวัด
+      </div>
+    </div>
+
+    <div class="bg-gray-800 p-4 rounded-xl shadow">
+      <button onclick="toggle('b')" class="w-full text-left font-semibold">
+        ⚙️ EV Engineer
+      </button>
+      <div id="b" class="hidden mt-2 text-gray-300">
+        - ออกแบบระบบไฟฟ้า<br>
+        - วิเคราะห์ BMS<br>
+        - เขียนโปรแกรมควบคุม
+      </div>
+    </div>
+
+  </div>
 </div>
 
 <script>
-function toggle() {
-  const c = document.getElementById("content");
-  c.style.display = c.style.display === "none" ? "block" : "none";
+function toggle(id) {
+  const el = document.getElementById(id);
+  el.classList.toggle("hidden");
 }
 </script>
 
 </body>
 </html>
-
-<button onclick="toggle('a')">EV Technician</button>
-<div id="a" style="display:none;">รายละเอียด A</div>
-
-<button onclick="toggle('b')">EV Engineer</button>
-<div id="b" style="display:none;">รายละเอียด B</div>
-
-<script>
-function toggle(id) {
-  const el = document.getElementById(id);
-  el.style.display = el.style.display === "none" ? "block" : "none";
-}
-</script>
