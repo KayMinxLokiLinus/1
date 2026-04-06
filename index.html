@@ -1,24 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>EV Roadmap</title>
-</head>
-<body>
+<button onclick="toggle('a')">EV Technician</button>
+<div id="a" style="display:none;">รายละเอียด A</div>
 
-<h1>EV Career Roadmap ⚡</h1>
-
-<button onclick="toggle()">EV Technician</button>
-
-<div id="content" style="display:none;">
-  <p>ซ่อมรถ EV, ใช้เครื่องมือวัด, ตรวจแบตเตอรี่</p>
-</div>
+<button onclick="toggle('b')">EV Engineer</button>
+<div id="b" style="display:none;">รายละเอียด B</div>
 
 <script>
-function toggle() {
-  const c = document.getElementById("content");
-  c.style.display = c.style.display === "none" ? "block" : "none";
+function toggle(id) {
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "none" ? "block" : "none";
 }
 </script>
-
-</body>
-</html>
