@@ -1,19 +1,22 @@
+```mermaid
 graph TD
+
 A[Intern / Trainee] --> B[EV Technician]
 B --> C[Mid-level EV Engineer]
 C --> D[Senior EV Engineer]
 
-C --> E[Charging Station Tech]
+C --> E[Charging Station Technician]
 C --> F[EV Testing Engineer]
 
 D --> G[EV System Specialist]
 G --> H[Embedded / Control Engineer]
 H --> I[EV R&D Engineer]
 
-## EV Technician
-- ซ่อมและตรวจเช็คระบบ EV
-- ใช้เครื่องมือวัด (Insulation, Multimeter)
-- เงินเดือน: 15k–25k+
+click B "#ev-technician"
+click C "#mid-level-ev-engineer"
+click E "#charging-station-technician"
+click H "#embedded--control-engineer"
+```
 
 ---
 
