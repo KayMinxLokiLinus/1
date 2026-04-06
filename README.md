@@ -3,6 +3,12 @@ graph TD
 
 A[Intern / Trainee] --> B[EV Technician]
 B --> C[Mid-level EV Engineer]
+---
+
+## Mid-level EV Engineer
+- วิเคราะห์ปัญหาระบบ
+- ใช้ diagnostic software
+- ดูแล junior
 C --> D[Senior EV Engineer]
 
 C --> E[Charging Station Technician 
@@ -20,12 +26,6 @@ click E "#charging-station-technician"
 click H "#embedded--control-engineer"
 ```
 
----
-
-## Mid-level EV Engineer
-- วิเคราะห์ปัญหาระบบ
-- ใช้ diagnostic software
-- ดูแล junior
 
 ---
 
